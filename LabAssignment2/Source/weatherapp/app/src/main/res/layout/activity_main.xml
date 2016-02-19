@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="tutorialcs5543.weatherapp.MainActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/WeatherIconImageView"
+        android:src="@drawable/na"
+        android:layout_alignParentTop="true"
+        android:layout_alignEnd="@+id/TemperatureTextView"
+        android:layout_alignStart="@+id/TemperatureTextView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/Temperature"
+        android:id="@+id/TemperatureTextView"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:layout_below="@+id/WeatherIconImageView"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/condition"
+        android:id="@+id/ConditionTextView"
+        android:layout_below="@+id/TemperatureTextView"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/location"
+        android:id="@+id/LocationTextView"
+        android:layout_below="@+id/ConditionTextView"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/purple"
+        android:id="@+id/imageView"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/WeatherIconImageView" />
+
+    <TextClock
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textClock"
+        android:layout_below="@+id/LocationTextView"
+        android:layout_alignStart="@+id/ConditionTextView" />
+
+    <CalendarView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/calendarView"
+        android:layout_alignTop="@+id/textClock"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>

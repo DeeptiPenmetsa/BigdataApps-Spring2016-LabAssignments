@@ -1,0 +1,10 @@
+customerdata<-('Wholesale_customers_data.csv')
+customerdata
+cdata.features=customerdata
+cdata.features$Channel<-null
+cdata.features$Region<-null
+cdata.features
+result<-kmeans(cdata.features,3)
+result
+table(customerdata$Region,result$cluster)
+plot(customerdata[c("Fresh","Milk","Grocery","Frozen","Detergents_Paper","Delicassen")],col=result$cluster)
