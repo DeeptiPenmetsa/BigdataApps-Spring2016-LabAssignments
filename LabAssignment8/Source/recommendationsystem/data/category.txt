@@ -1,0 +1,10 @@
+2::books
+3::computers
+4::games
+5::health
+6::movies
+7::music
+8::other
+9::technology
+10::travel
+11::wealth
